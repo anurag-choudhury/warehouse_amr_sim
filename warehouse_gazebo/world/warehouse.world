@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <world name="default">
+    <!-- Model definition -->
+    <model name="warehouse_structure">
+      <static>true</static>
+      
+      <!-- Link definition -->
+      <link name="link">
+        
+        <!-- Visual representation of the link -->
+        <visual name="visual">
+          <geometry>
+            <mesh filename="file:///home/anurag/warehouse_amr_sim/src/warehouse_gazebo/meshes/WareHouse_Structure_DAE.dae"/>
+          </geometry>
+        </visual>
+        
+      </link>
+    </model>
+  </world>
+</sdf>
