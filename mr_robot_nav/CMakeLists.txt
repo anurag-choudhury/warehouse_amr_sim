@@ -16,7 +16,13 @@ install(
 	config
 	launch
   maps
+  scripts
 	DESTINATION share/${PROJECT_NAME}
+)
+install(
+	PROGRAMS
+  scripts/waypoint.py
+	DESTINATION lib/${PROJECT_NAME}
 )
 
 if(BUILD_TESTING)

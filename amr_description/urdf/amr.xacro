@@ -97,14 +97,14 @@
   <visual>
     <origin xyz="0.033114 0.12231 -0.435588" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find amr_description)/meshes/sensor_rod_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find amr_description)/meshes/sensor_rod_1.stl" scale="0.001 0.001 0.0007"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.033114 0.12231 -0.435588" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find amr_description)/meshes/sensor_rod_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find amr_description)/meshes/sensor_rod_1.stl" scale="0.001 0.001 0.0007"/>
     </geometry>
   </collision>
 </link>
