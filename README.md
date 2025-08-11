@@ -45,21 +45,38 @@ Data is transmitted via MQTT to a cloud dashboard for warehouse condition monito
 6. Optional alerts on threshold breaches
 
 ---
+## 📦 Dependencies
 
-## 📦 Docker Environment
+### **1. Core Requirement**
+- **Docker** ≥ 20.10  
+  [Install Docker](https://docs.docker.com/get-docker/) if not already installed.
 
-The `Dockerfile` installs:
-
-- **ROS 2 Humble** desktop
-- **Gazebo Harmonic**
-- ROS simulation packages:
+### **2. Installed Inside the Docker Image**
+From the provided Dockerfile:
+- **Base OS & Framework**
+  - Ubuntu 22.04 (via `ros:humble` base image)
+  - ROS 2 Humble (desktop version)
+- **Simulation**
+  - Gazebo Harmonic (`gz-harmonic`)
   - `ros-humble-gazebo-ros-pkgs`
   - `ros-humble-gazebo-ros2-control`
+  - `ros-humble-ros-gzharmonic`
+- **Navigation & Mapping**
   - `ros-humble-nav2-bringup`
   - `ros-humble-rtabmap-ros`
-  - `ros-humble-ros-gzharmonic`
-- Build tools: `colcon`, `cmake`, `build-essential`
-- ROS utilities: `python3-colcon-common-extensions`, `python3-rosdep`, `python3-pip`
+- **Development Tools**
+  - `build-essential`
+  - `cmake`
+  - `python3-colcon-common-extensions`
+  - `python3-rosdep`
+  - `python3-pip`
+- **Utilities**
+  - `curl`
+  - `lsb-release`
+  - `gnupg`
+  - `sudo`
+- **ROS Dependency Management**
+  - `rosdep init` and `rosdep update` pre-configured
 
 ---
 
@@ -90,4 +107,14 @@ source install/setup.bash
 ros2 launch mr_robot_gazebo sim_world.launch.py 
 ```
 
+### CAD Snapshots
+
+
+| Front View | BACK View |
+|------------|-----------|
+| ![Front View](assets/AMR-FRONT.png) | ![Back View](assets/AMR_BACK.png) |
+
+| CHASSIS ISOMETIC | Chassis Close-up |
+|--------------|------------------|
+| ![Sensor Array](assets/AMR-CAD-ISOMETRIC.png) | ![Chassis](assets/AMR-CAD-SIDE-VIEW.png) |
 
