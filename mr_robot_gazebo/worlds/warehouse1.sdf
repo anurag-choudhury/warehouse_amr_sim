@@ -64,12 +64,12 @@
             </plane>
           </geometry>
           <material>
-            <ambient>0.800000012 0.800000012 0.800000012 1</ambient>
-            <diffuse>0.800000012 0.800000012 0.800000012 1</diffuse>
-            <specular>0.800000012 0.800000012 0.800000012 1</specular>
+              <ambient>0.2627 0.2667 0.1922 1</ambient>
+  <diffuse>0.2627 0.2667 0.1922 1</diffuse>
+  <specular>0.1 0.1 0.1 1</specular>
           </material>
         </visual>
-        <pose>0 0 0 0 0 0</pose>
+        <pose>0 0 0.1 0 0 0</pose>
         <inertial>
           <pose>0 0 0 0 0 0</pose>
           <mass>1</mass>
@@ -92,20 +92,20 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>file:///workspaces/mr_robo_ws/src/mr_robot_gazebo/worlds/WareHouse_Structure_DAE_V5(Dummy).dae</uri>
+              <uri>file:///workspaces/mr_robo_ws/src/mr_robot_gazebo/worlds/WareHouse_Structure_DAE_V9(Dummy).dae</uri>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>file:///workspaces/mr_robo_ws/src/mr_robot_gazebo/worlds/WareHouse_Structure_DAE_V5(Dummy).dae</uri>
+              <uri>file:///workspaces/mr_robo_ws/src/mr_robot_gazebo/worlds/WareHouse_Structure_DAE_V9(Dummy).dae</uri>
             </mesh>
           </geometry>
         </collision>
-        <pose>0 0 0 0 0 0</pose>
+        <pose>0 0 -0.5 0 0 0</pose>
         <inertial>
-          <pose>0 0 0 0 0 0</pose>
+          <pose>0 0 -0.5 0 0 0</pose>
           <mass>1</mass>
           <inertia>
             <ixx>1</ixx>
@@ -122,6 +122,11 @@
       <static>false</static>
       <self_collide>false</self_collide>
     </model>
+    <include>
+      <uri>file:///workspaces/mr_robo_ws/src/mr_robot_gazebo/model/Tugbot-charging-station</uri>
+      <name>charging_station</name>
+      <pose>-12.87 -10.50 0.01 0 0 -1.57</pose>
+    </include>
     <light name='sun' type='directional'>
       <pose>0 0 10 0 0 0</pose>
       <cast_shadows>true</cast_shadows>

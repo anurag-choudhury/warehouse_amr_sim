@@ -21,7 +21,8 @@ install(
 )
 install(
 	PROGRAMS
-  scripts/waypoint.py
+  scripts/waypoint_x.py
+  scripts/waypoint_y.py
 	DESTINATION lib/${PROJECT_NAME}
 )
 

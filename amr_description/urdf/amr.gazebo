@@ -62,8 +62,8 @@
 </gazebo>
 <gazebo reference="base_link">
   <material>${body_color}</material>
-  <mu1>0.0</mu1>
-  <mu2>0.0</mu2>
+  <mu1>0.2</mu1>
+  <mu2>0.2</mu2>
   <selfCollide>false</selfCollide>
   <gravity>false</gravity>
 </gazebo>
